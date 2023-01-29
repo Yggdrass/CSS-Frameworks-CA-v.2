@@ -1,0 +1,26 @@
+{
+  "name": "css-frameworks-ca-v.2",
+  "version": "1.0.0",
+  "description": "Needed to redo the uploading etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yggdrass/CSS-Frameworks-CA-v.2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yggdrass/CSS-Frameworks-CA-v.2/issues"
+  },
+  "homepage": "https://github.com/Yggdrass/CSS-Frameworks-CA-v.2#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
+}
