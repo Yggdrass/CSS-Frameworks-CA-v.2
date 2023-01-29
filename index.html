@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/scss/styles.scss">
+    <title>CSS Frameworks CA | Home</title>
+</head>
+<body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-primary w-100">
+        <div class="container-fluid m-2 g-3">
+          <a class="navbar-brand" href="#">CSS Frameworks CA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login.html">LOGIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/profile.html">PROFILE</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        
+      <div class="container mb-3 mt-5">
+        <h1 class="">Frameworks Forum Posts</h1>
+      </div>
+      
+
+
+        <!--Search Bar-->
+
+        <div class="container-fluid justify-content-middle col-4 m-auto p-5 w-75">
+          <h2 class="mb-3">Search for posts:</h2>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+
+        <!--Post Feed-->
+        
+      <div cass="container d-flex">
+        <div class="row p-2 m-3 justify-content-middle">
+          <h2 class="mb-3">Post feed:</h2>
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                <div class="card">
+                    <div class="card-header"><img src="./images/woman_1.jpg" class="img-thumbnail w-25" alt="profile picture of a woman">
+                      My favorite game
+                    </div>
+                    <img src="./images/forgelegend_gamecover.jpg" class="card-img-top w-75" alt="picture of the game forge legend">
+                    <div class="card-body">
+                      <h4 class="card-title">This is my favorite game</h4>
+                      <p class="card-text">This game is an old one, but it still is my favorite of all time...</p>
+                      <a href="#" class="btn btn-success">read more</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+              <div class="card">
+                  <div class="card-header"><img src="./images/man_1_md.jpg" class="img-thumbnail w-25" alt="profile picture of a man">
+                    Decorating tips
+                  </div>
+                  <img src="./images/bedroom_decor.jpg" class="card-img-top w-75" alt="bedside table with candle and books">
+                  <div class="card-body">
+                    <h5 class="card-title">How to decorate your bedroom</h5>
+                    <p class="card-text">In this post I want to give you my top 10 tips to decorate the bedroom...</p>
+                    <a href="#" class="btn btn-success">read more</a>
+                  </div>
+                </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-header"><img src="./images/woman_2.jpg" class="img-thumbnail w-25" alt="profile picture of a woman">
+                  Trip advise
+                </div>
+                <img src="./images/mongolian_tents.jpg" class="card-img-top" alt="mongolian tents">
+                <div class="card-body">
+                  <h5 class="card-title">I went hiking in Mongolia</h5>
+                  <p class="card-text">Let me tell you a story about my best hiking trip. I went to Mongolia...</p>
+                  <a href="#" class="btn btn-success">read more</a>
+                </div>
+              </div>
+        </div>
+      </div>
+
+        
+        <!--Create Forum Post-->
+        <div class="container pb-5">
+          <div class="row p-1">
+            <h2 class="mb-3">Write a new post:</h2>
+            <div class="col-md-4 col-lg-4">
+              <label for="validationCustomUsername" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                  Please choose a username.
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 col-lg-4">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3 col-lg-8">
+              <label for="exampleFormControlTextarea1" class="form-label">Forum post textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                  Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                  You must agree before submitting.
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit forum post</button>
+            </div>
+          </div>
+        </div>
+
+    </main>
+
+    <footer>
+      <div class="contanier text-center align-content-center bg-primary mt-5">
+        <div class="row">
+          
+          <div class="col-sm-12 col-md-6 col-lg-6 pt-5">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login.html">LOGIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/profile.html">PROFILE</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 pt-5 mb-5">
+            <p>Copyright @</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
